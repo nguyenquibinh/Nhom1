@@ -1,0 +1,251 @@
+<html style="background-color: #EBEBEB;">
+		<head>
+			<meta charset="utf-8">
+			<meta name="viewport" content="width=device-width, initial-scale=1">
+			<link rel="stylesheet" href="style.css">
+			<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+			<title>Các thành viên nhóm 1</title>
+		</head>
+	<body >
+		<div id="header">
+			<div class="box">
+				<a href="https://www.ctu.edu.vn/" target="_blank"> <img src="picture\logo_ctu.png" alt="logo" width="100px" height="100px"></a>
+			</div>
+				<a class="tieude" href="https://cet.ctu.edu.vn/images/upload/daotao/decuong/KC326.pdf" target="_blank"><p>Công nghệ IoTs và Ứng dụng</p></a>
+		</div>
+		<div id="left">
+		<ul>
+			<li><a class="active" href="C:/Users/as/Desktop/Cac thanh vien trong nhom/Các thành viên nhóm 1.html"><i class="fa-solid fa-house"></i> Trang chủ</a></li>
+			<li><a href="Chuan dau ra.html">Chuẩn đầu ra</a></li>
+			<li><a href="PPGD.html">PPGD và NVSV</a></li>
+			<li><a href="Đánh giá.html">Đánh giá</a></li>
+			<li><a href="#">TLTK</a></li>
+		</ul>
+		<h3>Liên kết</h3>
+		<ul style="background-color: lightblue">
+			<li><a href="https://www.ctu.edu.vn/" target="_blank">CTU</a></li>
+			<li><a href="https://cet.ctu.edu.vn/" target="_blank">Khoa CN</a></li>
+			<li><a href="https://w3schools.com/css" target="_blank">W3School</a></li>
+			<li><a href="https://htql.ctu.edu.vn/htql/login.php" target="_blank">HTQL CTU</a></li>
+		</ul>
+		</div>
+		<div id="right" style="background-color: #EEE0E5">
+            <h1 style="text-align: center; color: red">Các thành viên trong nhóm 1</h1>
+			<h3>Chọn thành viên để xem thông tin !</h3>
+            <select id="drop1" onclick="get_selection()" style="width: 150px; margin-top: 20px; height: 30px;">
+                <option>Trần Minh Tấn</option>
+                <option>Nguyễn Qui Bình</option>
+                <option>Châu Khánh Vy</option>
+                <option>Vưu Thị Thanh Hảo</option>
+                <option>Nguyễn Ngọc Thanh Vy</option>
+                <option>Huỳnh Ngọc Đan Thanh</option>
+            </select>
+
+            <p><img id="img" src="picture\tan.png" alt="picture" width="200" height="200"></p>
+            <h2>Thông tin</h2>
+            <table id="myTable" cellspacing="0">
+              <tr>
+                <td>Họ và tên</td>
+                <td>Trần Minh Tấn</td>
+              </tr>
+              <tr>
+                <td>MSSV</td>
+                <td>B1907185</td>
+              </tr>
+              <tr>
+                <td>Ngành</td>
+                <td>Kỹ thuật cơ điện tử</td>
+              </tr>
+            </table>
+            <br>
+
+            <script>
+            function get_selection(){
+                x = document.getElementById("drop1").options;
+                var index1=0;
+                var index2=0;
+                var index3=0;
+                var index4=0;
+                var index5=0;
+                var index6=0;
+                switch (x.selectedIndex){
+                case 0:
+                    document.getElementById("myTable").deleteRow(0);
+                    document.getElementById("myTable").deleteRow(0);
+                    document.getElementById("myTable").deleteRow(0);
+
+                    var table = document.getElementById("myTable");
+                    var row0 = table.insertRow(0);
+                    var cell01 = row0.insertCell(0);
+                    var cell02 = row0.insertCell(1);
+
+                    var row1 = table.insertRow(1);
+                    var cell11 = row1.insertCell(0);
+                    var cell12 = row1.insertCell(1);
+
+                    var row2 = table.insertRow(2);
+                    var cell21 = row2.insertCell(0);
+                    var cell22 = row2.insertCell(1);
+                    cell01.innerHTML = "Họ và tên";
+                    cell02.innerHTML = "Trần Minh Tấn";
+                    cell11.innerHTML = "MSSV";
+                    cell12.innerHTML = "B1907185";
+                    cell21.innerHTML = "Ngành";
+                    cell22.innerHTML = "Kỹ thuật cơ điện tử";
+
+                    document.getElementById('img').src="picture/tan.png"
+
+                    break;
+                case 1:
+                    document.getElementById("myTable").deleteRow(0);
+                    document.getElementById("myTable").deleteRow(0);
+                    document.getElementById("myTable").deleteRow(0);
+
+                    var table = document.getElementById("myTable");
+
+                    var row0 = table.insertRow(0);
+                    var cell01 = row0.insertCell(0);
+                    var cell02 = row0.insertCell(1);
+
+                    var row1 = table.insertRow(1);
+                    var cell11 = row1.insertCell(0);
+                    var cell12 = row1.insertCell(1);
+
+                    var row2 = table.insertRow(2);
+                    var cell21 = row2.insertCell(0);
+                    var cell22 = row2.insertCell(1);
+
+                    cell01.innerHTML = "Họ và tên";
+                    cell02.innerHTML = "Nguyễn Qui Binh";
+                    cell11.innerHTML = "MSSV";
+                    cell12.innerHTML = "B1907106";
+                    cell21.innerHTML = "Ngành";
+                    cell22.innerHTML = "Kỹ thuật cơ điện tử";
+
+                    document.getElementById('img').src='picture/binh.png'
+
+                    break;
+                case 2:
+                    document.getElementById("myTable").deleteRow(0);
+                    document.getElementById("myTable").deleteRow(0);
+                    document.getElementById("myTable").deleteRow(0);
+
+                    var table = document.getElementById("myTable");
+
+                    var row0 = table.insertRow(0);
+                    var cell01 = row0.insertCell(0);
+                    var cell02 = row0.insertCell(1);
+
+                    var row1 = table.insertRow(1);
+                    var cell11 = row1.insertCell(0);
+                    var cell12 = row1.insertCell(1);
+
+                    var row2 = table.insertRow(2);
+                    var cell21 = row2.insertCell(0);
+                    var cell22 = row2.insertCell(1);
+
+                    cell01.innerHTML = "Họ và tên";
+                    cell02.innerHTML = "Châu Khánh Vy";
+                    cell11.innerHTML = "MSSV";
+                    cell12.innerHTML = "B2011688";
+                    cell21.innerHTML = "Ngành";
+                    cell22.innerHTML = "Quản lý Công Nghiệp";
+
+                    document.getElementById('img').src='picture/khanhvy.png'
+
+                    break
+                case 3:
+                    document.getElementById("myTable").deleteRow(0);
+                    document.getElementById("myTable").deleteRow(0);
+                    document.getElementById("myTable").deleteRow(0);
+
+                    var table = document.getElementById("myTable");
+
+                    var row0 = table.insertRow(0);
+                    var cell01 = row0.insertCell(0);
+                    var cell02 = row0.insertCell(1);
+
+                    var row1 = table.insertRow(1);
+                    var cell11 = row1.insertCell(0);
+                    var cell12 = row1.insertCell(1);
+
+                    var row2 = table.insertRow(2);
+                    var cell21 = row2.insertCell(0);
+                    var cell22 = row2.insertCell(1);
+
+                    cell01.innerHTML = "Họ và tên";
+                    cell02.innerHTML = "Vưu Thị Thanh Hảo";
+                    cell11.innerHTML = "MSSV";
+                    cell12.innerHTML = "B2011718";
+                    cell21.innerHTML = "Ngành";
+                    cell22.innerHTML = "Quản lý công Nghiệp";
+
+                    document.getElementById('img').src='picture/thanhhao.png'
+
+                    break
+                case 4:
+                    document.getElementById("myTable").deleteRow(0);
+                    document.getElementById("myTable").deleteRow(0);
+                    document.getElementById("myTable").deleteRow(0);
+
+                    var table = document.getElementById("myTable");
+
+                    var row0 = table.insertRow(0);
+                    var cell01 = row0.insertCell(0);
+                    var cell02 = row0.insertCell(1);
+
+                    var row1 = table.insertRow(1);
+                    var cell11 = row1.insertCell(0);
+                    var cell12 = row1.insertCell(1);
+
+                    var row2 = table.insertRow(2);
+                    var cell21 = row2.insertCell(0);
+                    var cell22 = row2.insertCell(1);
+
+                    cell01.innerHTML = "Họ và tên";
+                    cell02.innerHTML = "Nguyễn Ngọc Thanh Vy";
+                    cell11.innerHTML = "MSSV";
+                    cell12.innerHTML = "B2011690";
+                    cell21.innerHTML = "Ngành";
+                    cell22.innerHTML = "Quản lý công Nghiệp";
+
+                    document.getElementById('img').src='picture/thanhvy.png'
+
+                    break
+                case 5:
+                    document.getElementById("myTable").deleteRow(0);
+                    document.getElementById("myTable").deleteRow(0);
+                    document.getElementById("myTable").deleteRow(0);
+
+                    var table = document.getElementById("myTable");
+
+                    var row0 = table.insertRow(0);
+                    var cell01 = row0.insertCell(0);
+                    var cell02 = row0.insertCell(1);
+
+                    var row1 = table.insertRow(1);
+                    var cell11 = row1.insertCell(0);
+                    var cell12 = row1.insertCell(1);
+
+                    var row2 = table.insertRow(2);
+                    var cell21 = row2.insertCell(0);
+                    var cell22 = row2.insertCell(1);
+
+                    cell01.innerHTML = "Họ và tên";
+                    cell02.innerHTML = "Huỳnh Ngọc Đan Thanh";
+                    cell11.innerHTML = "MSSV";
+                    cell12.innerHTML = "B2011761";
+                    cell21.innerHTML = "Ngành";
+                    cell22.innerHTML = "Quản lý công Nghiệp";
+
+                    document.getElementById('img').src='picture/danthanh.png'
+                    break
+                }
+            }
+            </script>
+		</div>
+		<div id="footer">
+			<p>KC326 Course &copy Nguyen Van Khanh - PLC&IIoT Công nghiệp</p>
+		</div>
+	</body>
+</html>
